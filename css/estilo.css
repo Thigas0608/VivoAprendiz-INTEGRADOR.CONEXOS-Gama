@@ -24,3 +24,25 @@ header .navbar .nav-link.active {
     color: #FDFDFD;
 } 
 
+/* Cor de fundo (Degrade) do carrossel*/
+main {
+    background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
+}
+
+main article .carousel-item{
+    padding: 30px 0;
+}
+
+main article .carousel-item h2{
+    color: #388E3C;
+    width: 388px;
+    margin-top: 100px;
+}
+
+main article .carousel-item p{
+    width: 365px;
+}
+
+
+
+
