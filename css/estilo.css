@@ -1,0 +1,26 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+header .navbar.navbar-expand-lg {
+    background-color: #388E3C;
+}
+
+header nav .container .navbar-collapse{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* tirando sublinhado e mudando a cor do texto  */
+header .navbar .nav-link {
+    text-decoration: none;
+    color: #FDFDFD;
+} 
+
+header .navbar .nav-link.active {
+    font-weight: bold;
+    color: #FDFDFD;
+} 
+
