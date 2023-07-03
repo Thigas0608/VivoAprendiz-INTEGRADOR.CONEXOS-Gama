@@ -3,46 +3,165 @@ body{
     padding: 0%;
 }
 
-header .navbar.navbar-expand-lg {
+/* Header */
+header nav.navbar.navbar-expand-lg {
     background-color: #388E3C;
 }
 
-header nav .container .navbar-collapse{
+header nav div.container div.collapse.navbar-collapse{
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 /* tirando sublinhado e mudando a cor do texto  */
-header .navbar .nav-link {
+header ul.navbar-nav a.nav-link {
     text-decoration: none;
     color: #FDFDFD;
 } 
 
-header .navbar .nav-link.active {
+header ul.navbar-nav a.nav-link.active {
     font-weight: bold;
     color: #FDFDFD;
 } 
+/* Final Header */
 
+
+/* Carrossel */
 /* Cor de fundo (Degrade) do carrossel*/
-main {
+main section div.carousel.slide{
     background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
 }
 
-main article .carousel-item{
-    padding: 30px 0;
+main section div.carousel-item{
+    padding: 30px;
 }
 
-main article .carousel-item h2{
+main section div.carousel-item h2{
     color: #388E3C;
     width: 388px;
     margin-top: 100px;
 }
 
-main article .carousel-item p{
+main section div.carousel-item p{
     width: 365px;
 }
+/* Final do Carrossel */
 
+
+/* Planos Conexos */
+section.planosConexos div.listaPlanos ul{
+    text-align:left;
+    margin-bottom: 50px;
+}
+
+section.planosConexos div.listaPlanos p{
+    text-align:left;
+}
+
+section.planosConexos h2{
+    color: #388E3C;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.planosConexos div.listaPlanos{
+    display: flex;
+    justify-content: space-around;
+}
+
+section.planosConexos div.listaPlanos article {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+section.planosConexos h6{
+    color: #388E3C;
+}
+
+section.planosConexos div.listaPlanos div.imagemPlano{
+    height: 100px;
+}
+
+section button.buttonPlano{
+    background-color: #388E3C;
+    border-radius: 10px;
+    color: #FDFDFD;
+    padding: 5px;
+    border: 1px solid #388E3C;
+}
+
+section.planosConexos div.listaPlanos h6{
+    text-align: center;
+}
+
+section.planosConexos div.listaPlanos div.imagemPlano{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+section.planosConexos{
+    margin-bottom: 50px;
+}
+/* Final da parte do Plano Conexos */
+
+
+/* Footer */
+footer {
+    background-color: #388E3C;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+footer div.container {
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer div.col p {
+    font-size: small;
+    text-align: left;
+    text-decoration: none;
+    font-weight: lighter;
+    padding: -50px -100px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    display:table-row;  
+    padding:10px 15px; 
+    color:#FFFFFF; 
+} 
+
+footer ul li {
+    text-decoration: none;
+    display:table-row;    
+}
+
+footer div.row {
+    margin: 0px 90px;
+}
+
+footer div.copyright {
+    text-align: center;
+    border-top: 1.5px solid #FFFFFF;
+    padding: 10px; 
+    font-size: 12px;
+}
+/* Final do Footer */
 
 
 
