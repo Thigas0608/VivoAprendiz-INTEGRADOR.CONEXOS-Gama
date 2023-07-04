@@ -1,4 +1,4 @@
-body{
+body {
     margin: 0%;
     padding: 0%;
 }
@@ -8,7 +8,7 @@ header nav.navbar.navbar-expand-lg {
     background-color: #388E3C;
 }
 
-header nav div.container div.collapse.navbar-collapse{
+header nav div.container div.collapse.navbar-collapse {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -18,54 +18,54 @@ header nav div.container div.collapse.navbar-collapse{
 header ul.navbar-nav a.nav-link {
     text-decoration: none;
     color: #FDFDFD;
-} 
+}
 
 header ul.navbar-nav a.nav-link.active {
     font-weight: bold;
     color: #FDFDFD;
-} 
+}
 /* Final Header */
 
 
 /* Carrossel */
-/* Cor de fundo (Degrade) do carrossel*/
-main section div.carousel.slide{
+main section div.carousel.slide {
     background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
 }
 
-main section div.carousel-item{
+main section div.carousel-item {
     padding: 30px;
 }
 
-main section div.carousel-item h2{
+main section div.carousel-item h2 {
     color: #388E3C;
     width: 388px;
     margin-top: 100px;
 }
 
-main section div.carousel-item p{
+main section div.carousel-item p {
     width: 365px;
 }
 /* Final do Carrossel */
 
 
 /* Planos Conexos */
-section.planosConexos div.listaPlanos ul{
-    text-align:left;
+section.planosConexos div.listaPlanos ul {
+    text-align: left;
     margin-bottom: 50px;
 }
 
-section.planosConexos div.listaPlanos p{
-    text-align:left;
+section.planosConexos div.listaPlanos p {
+    text-align: left;
+    min-height: 100px;
 }
 
-section.planosConexos h2{
+section.planosConexos h2 {
     color: #388E3C;
     text-align: center;
     margin-bottom: 50px;
 }
 
-section.planosConexos div.listaPlanos{
+section.planosConexos div.listaPlanos {
     display: flex;
     justify-content: space-around;
 }
@@ -78,35 +78,101 @@ section.planosConexos div.listaPlanos article {
     text-align: center;
 }
 
-section.planosConexos h6{
+section.planosConexos h6 {
     color: #388E3C;
 }
 
-section.planosConexos div.listaPlanos div.imagemPlano{
+section.planosConexos div.listaPlanos div.imagemPlano {
     height: 100px;
 }
 
-section button.buttonPlano{
+section button.buttonPlano {
     background-color: #388E3C;
     border-radius: 10px;
     color: #FDFDFD;
     padding: 5px;
     border: 1px solid #388E3C;
+    box-shadow: 0px 0px 5px 5px #e3e1e1;
 }
 
-section.planosConexos div.listaPlanos h6{
+section button.buttonPlano:hover{
+    background-color: #1d6321;
+}
+
+section.planosConexos div.listaPlanos h6 {
     text-align: center;
 }
 
-section.planosConexos div.listaPlanos div.imagemPlano{
+section.planosConexos div.listaPlanos div.imagemPlano {
     text-align: center;
     margin-bottom: 50px;
 }
 
-section.planosConexos{
+section.planosConexos {
     margin-bottom: 50px;
+    /* Adiciona 50 pixels de espaçamento abaixo do elemento */
+    margin-top: 50px;
+    /* Adiciona 50 pixels de espaçamento acima do elemento */
+}
+
+section.planosConexos article {
+    box-shadow: 0px 0px 5px 5px #e3e1e1;
 }
 /* Final da parte do Plano Conexos */
+
+
+/* Contratação Conexos */
+section.contratacaoConexos{
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+section.contratacaoConexos article h4{
+   color:#388E3C;
+   margin-bottom: 40px;
+}
+
+section.contratacaoConexos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.contratacaoConexos form.formulario{
+    width: 500px;
+    height: 600px;
+    border: 1px solid #ccc;
+    padding: 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 5px #e3e1e1;
+}
+
+section form button.buttonCadastrar{
+    background-color: #388E3C;
+    border-radius: 10px;
+    color: #FDFDFD;
+    padding: 5px;
+    border: 1px solid #388E3C;
+    box-shadow: 0px 0px 5px 5px #e3e1e1;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 30px;
+}
+
+section  form button.buttonCadastrar:hover{
+    background-color: #1d6321;
+}
+
+section.contratacaoConexos form.formulario input,
+section.contratacaoConexos form.formulario select {
+    width: 100%;
+    padding: 2px 10px;
+}
+
+section.contratacaoConexos article div.imagemContratacaoPlano{
+    margin: 50px;
+}
+/* Final da parte da Contratação Conexos */
 
 
 /* Footer */
@@ -141,14 +207,14 @@ footer div.col p {
 
 footer ul li a {
     text-decoration: none;
-    display:table-row;  
-    padding:10px 15px; 
-    color:#FFFFFF; 
-} 
+    display: table-row;
+    padding: 10px 15px;
+    color: #FFFFFF;
+}
 
 footer ul li {
     text-decoration: none;
-    display:table-row;    
+    display: table-row;
 }
 
 footer div.row {
@@ -158,10 +224,7 @@ footer div.row {
 footer div.copyright {
     text-align: center;
     border-top: 1.5px solid #FFFFFF;
-    padding: 10px; 
+    padding: 10px;
     font-size: 12px;
 }
 /* Final do Footer */
-
-
-
