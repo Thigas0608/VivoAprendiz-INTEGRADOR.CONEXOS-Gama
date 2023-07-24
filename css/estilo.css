@@ -24,6 +24,7 @@ header ul.navbar-nav a.nav-link.active {
     font-weight: bold;
     color: #FDFDFD;
 }
+
 /* Final Header */
 
 
@@ -45,6 +46,7 @@ main section div.carousel-item h2 {
 main section div.carousel-item p {
     width: 365px;
 }
+
 /* Final do Carrossel */
 
 
@@ -72,9 +74,10 @@ section.planosConexos div.listaPlanos {
 
 section.planosConexos div.listaPlanos article {
     width: 250px;
+    height: 620px;
     border: 1px solid #ccc;
     padding: 30px;
-    border-radius: 10px;
+    border-radius: 17px;
     text-align: center;
 }
 
@@ -95,7 +98,7 @@ section button.buttonPlano {
     box-shadow: 0px 0px 5px 5px #e3e1e1;
 }
 
-section button.buttonPlano:hover{
+section button.buttonPlano:hover {
     background-color: #1d6321;
 }
 
@@ -118,36 +121,37 @@ section.planosConexos {
 section.planosConexos article {
     box-shadow: 0px 0px 5px 5px #e3e1e1;
 }
+
 /* Final da parte do Plano Conexos */
 
 
 /* Contratação Conexos */
-section.contratacaoConexos{
+section.contratacaoConexos {
     margin-bottom: 150px;
     margin-top: 150px;
 }
 
-section.contratacaoConexos article h4{
-   color:#388E3C;
-   margin-bottom: 40px;
+section.contratacaoConexos article h4 {
+    color: #388E3C;
+    margin-bottom: 40px;
 }
 
-section.contratacaoConexos{
+section.contratacaoConexos {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-section.contratacaoConexos form.formulario{
+section.contratacaoConexos form.formulario {
     width: 500px;
-    height: 600px;
+    height: 800px;
     border: 1px solid #ccc;
     padding: 70px;
-    border-radius: 10px;
+    border-radius: 17px;
     box-shadow: 0px 0px 5px 5px #e3e1e1;
 }
 
-section form button.buttonCadastrar{
+section form button.buttonCadastrar {
     background-color: #388E3C;
     border-radius: 10px;
     color: #FDFDFD;
@@ -159,8 +163,16 @@ section form button.buttonCadastrar{
     margin-top: 30px;
 }
 
-section  form button.buttonCadastrar:hover{
+section form button.buttonCadastrar:hover {
     background-color: #1d6321;
+}
+
+section.contratacaoConexos form.formulario input{
+    margin-bottom: 30px;
+}
+
+section.contratacaoConexos form.formulario select{
+    margin-bottom: 15px;
 }
 
 section.contratacaoConexos form.formulario input,
@@ -169,10 +181,55 @@ section.contratacaoConexos form.formulario select {
     padding: 2px 10px;
 }
 
-section.contratacaoConexos article div.imagemContratacaoPlano{
+section.contratacaoConexos article div.imagemContratacaoPlano {
     margin: 50px;
 }
+
 /* Final da parte da Contratação Conexos */
+
+/* Status de Solicitação */
+section.statusSolicitacao {
+    background: linear-gradient(rgb(255, 255, 255), rgb(144, 144, 250));
+    padding: 50px 0px;
+
+}
+
+section.statusSolicitacao article.containerStatus div.imagemStatus img {
+    width: 500px;
+}
+
+section.statusSolicitacao {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.statusSolicitacao article div.conteudoStatus {
+    margin-top: 45px;
+    width: 600px;
+}
+
+section.statusSolicitacao article div.conteudoStatus h2 {
+    color: #388E3C;
+}
+
+section.statusSolicitacao article div.conteudoStatus button.buttonStatus {
+    background-color: #388E3C;
+    border-radius: 10px;
+    color: #FDFDFD;
+    padding: 5px;
+    border: 1px solid #388E3C;
+    box-shadow: 0px 0px 5px 5px #8588af;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 30px;
+}
+
+section.statusSolicitacao article div.conteudoStatus button.buttonStatus:hover {
+    background-color: #1d6321;
+}
+
+
+/* Fianl da parte de Status de Solicitação */
 
 
 /* Footer */
@@ -228,3 +285,141 @@ footer div.copyright {
     font-size: 12px;
 }
 /* Final do Footer */
+
+
+/* PAGINA de Status de Solicitação */
+section.paginaStatusSolicitacao {
+    padding: 100px 0px;
+}
+
+section.paginaStatusSolicitacao {
+    padding: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+section.paginaStatusSolicitacao article div.tituloTexto h1{
+    color: #388E3C;
+    font-size: 60px;
+    width: 100%;
+}
+
+section.paginaStatusSolicitacao article div.tituloTexto p{
+    width: 500px;
+    font-size: 30px;
+}
+
+section.paginaStatusSolicitacao article.containerCodigo{
+    margin-top: 100px;
+}
+
+section.paginaStatusSolicitacao article form.formularioCodigo {
+    width: 500px;
+    border: 1px solid #ccc;
+    padding: 30px;
+    border-radius: 17px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px #e3e1e1;
+    margin-top: 95px;
+}
+
+section.paginaStatusSolicitacao form.formularioCodigo input{
+    margin-top: 10px;
+    width: 80%;    
+}
+
+section.paginaStatusSolicitacao article form.formularioCodigo button.buttonVerificarStatus {
+    background-color: #388E3C;
+    border-radius: 10px;
+    color: #FDFDFD;
+    padding: 5px;
+    border: 1px solid #388E3C;
+    width: 81%;
+    padding: 5px 10px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+section.paginaStatusSolicitacao article form.formularioCodigo button.buttonVerificarStatus:hover {
+    background-color: #1d6321;
+}
+
+section.paginaStatusSolicitacao article form div{
+    height: 100%;
+    border: 1px solid #388E3C;
+    border-radius: 9px;
+    background-color: #E4E4E4;
+    padding: 10px;
+    text-align: left;
+    font-size: 17px;
+}
+
+/* Final da PAGINA de Status de Solicitação */
+
+
+
+/* PAGINA de Contratação Conexos */
+section.paginaContratacaoConexos {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 150px;
+    margin-top: 150px;
+}
+
+section.paginaContratacaoConexos article div.textoTitulo{
+    width: 500px;
+}
+
+section.paginaContratacaoConexos article div.textoTitulo h1{
+    color: #388E3C;
+    margin-bottom: 50px;
+}
+
+section.paginaContratacaoConexos article div.textoTitulo ul{
+    margin-top: 50px;
+}
+
+section.paginaContratacaoConexos article h4 {
+    color: #388E3C;
+    margin-bottom: 40px;
+}
+
+section.paginaContratacaoConexos form.formularioContratacao {
+    width: 500px;
+    height: 800px;
+    border: 1px solid #ccc;
+    padding: 70px;
+    border-radius: 17px;
+    box-shadow: 0px 0px 5px 5px #e3e1e1;
+}
+
+section form button.buttonPlano {
+    background-color: #388E3C;
+    border-radius: 10px;
+    color: #FDFDFD;
+    padding: 5px;
+    border: 1px solid #388E3C;
+    box-shadow: 0px 0px 5px 5px #e3e1e1;
+    width: 100%;
+    padding: 5px 10px;
+    margin-top: 30px;
+}
+
+section form button.buttonPlano:hover {
+    background-color: #1d6321;
+}
+
+section.paginaContratacaoConexos form.formularioContratacao input{
+    margin-bottom: 30px;
+}
+
+section.paginaContratacaoConexos form.formularioContratacao select{
+    margin-bottom: 15px;
+}
+
+section.paginaContratacaoConexos form.formularioContratacao input,
+section.paginaContratacaoConexos form.formularioContratacao select {
+    width: 100%;
+    padding: 2px 10px;
+}
+/* Final da PAGINA de Contratação Conexos */
