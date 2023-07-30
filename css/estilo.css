@@ -337,7 +337,7 @@ section.paginaStatusSolicitacao article form.formularioCodigo button.buttonVerif
     width: 81%;
     padding: 5px 10px;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 section.paginaStatusSolicitacao article form.formularioCodigo button.buttonVerificarStatus:hover {
@@ -353,6 +353,62 @@ section.paginaStatusSolicitacao article form div{
     text-align: left;
     font-size: 17px;
 }
+
+
+@media only screen and  (max-width: 555px){
+    section.paginaStatusSolicitacao article div.tituloTexto p {
+        font-size: 15px;
+    }
+
+    body main section article div {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    section.paginaStatusSolicitacao article form.formularioCodigo {
+       width: 333px;
+    }
+
+    section.paginaStatusSolicitacao article div.tituloTexto h1 {
+        font-size: 35px;
+    }
+}
+
+
+@media only screen and  (max-width: 425px){
+
+    footer ul li a {
+        font-size: 12px;
+    }
+
+    section.paginaStatusSolicitacao article div.tituloTexto p {
+        font-size: 13px;
+    }
+
+    body main section article div {
+        display: flex;
+        flex-flow: wrap;
+    }
+
+    section.paginaStatusSolicitacao article form.formularioCodigo {
+       width: 285px;
+       
+    }
+
+    section.paginaStatusSolicitacao article div.tituloTexto h1 {
+        font-size: 27px;
+    }
+
+    section.paginaStatusSolicitacao article div.tituloTexto p {
+        width: 256px;
+    }
+
+    footer div.copyright {
+        font-size: 8px; 
+    }
+
+}
+
 
 /* Final da PAGINA de Status de Solicitação */
 
@@ -476,7 +532,7 @@ section.paginaContratacaoConexos form.formularioContratacao select {
     }
     section.statusSolicitacao article div.conteudoStatus{
         width: auto;
-        padding: 30px;
+        padding: 60px;
         text-align: center;
     }
     /* Final Status de Solicitação */
