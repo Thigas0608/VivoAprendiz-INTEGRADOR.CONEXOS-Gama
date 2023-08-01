@@ -364,6 +364,7 @@ section.paginaStatusSolicitacao article form div {
     body main section article div {
         display: flex;
         flex-flow: wrap;
+        justify-content: center;
     }
 
     section.paginaStatusSolicitacao article form.formularioCodigo {
@@ -503,14 +504,11 @@ section.paginaContratacaoConexos form.formularioContratacao select {
         width: 360px;
     }
 }
-
-
-
 /* Final da PAGINA de Contratação Conexos */
 
 
 
-/* Media Query */
+/* Media Query 100px*/ 
 @media(max-width:1000px) {
 
     /* Carrossel */
@@ -600,8 +598,5 @@ section.paginaContratacaoConexos form.formularioContratacao select {
         width: auto;
         margin: 30px;
 
-    }
-
-
-
-}
+    } 
+}   /*Final  Media Query 1000px*/
