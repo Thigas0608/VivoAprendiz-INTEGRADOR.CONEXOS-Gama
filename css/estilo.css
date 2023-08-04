@@ -30,7 +30,7 @@ header ul.navbar-nav a.nav-link.active {
 
 /* Carrossel */
 main section div.carousel.slide {
-    background: linear-gradient(rgb(144, 144, 250), rgb(255, 255, 255))
+    background: linear-gradient(#C8E6C9, rgb(255, 255, 255))
 }
 
 main section div.carousel-item {
@@ -187,11 +187,11 @@ section.contratacaoConexos article div.imagemContratacaoPlano {
 
 /* Final da parte da Contratação Conexos */
 
+
 /* Status de Solicitação */
 section.statusSolicitacao {
-    background: linear-gradient(rgb(255, 255, 255), rgb(144, 144, 250));
+    background: linear-gradient(rgb(255, 255, 255), #C8E6C9);
     padding: 50px 0px;
-
 }
 
 section.statusSolicitacao article.containerStatus div.imagemStatus img {
@@ -218,7 +218,7 @@ section.statusSolicitacao article div.conteudoStatus button.buttonStatus {
     color: #FDFDFD;
     padding: 5px;
     border: 1px solid #388E3C;
-    box-shadow: 0px 0px 5px 5px #8588af;
+    box-shadow: 0px 0px 5px 5px #d2d4f1;
     width: 100%;
     padding: 5px 10px;
     margin-top: 30px;
@@ -228,8 +228,7 @@ section.statusSolicitacao article div.conteudoStatus button.buttonStatus:hover {
     background-color: #1d6321;
 }
 
-
-/* Fianl da parte de Status de Solicitação */
+/* Final da parte de Status de Solicitação */
 
 
 /* Footer */
@@ -277,7 +276,7 @@ footer ul li {
 footer div.row {
     margin: 0px 90px;
 }
-
+footer
 footer div.copyright {
     text-align: center;
     border-top: 1.5px solid #FFFFFF;
@@ -301,13 +300,12 @@ section.paginaStatusSolicitacao {
 
 section.paginaStatusSolicitacao article div.tituloTexto h1 {
     color: #388E3C;
-    font-size: 60px;
+    font-size: 40px;
     width: 100%;
 }
 
 section.paginaStatusSolicitacao article div.tituloTexto p {
-
-    font-size: 30px;
+    font-size: 25px;
 }
 
 section.paginaStatusSolicitacao article.containerCodigo {
@@ -315,13 +313,13 @@ section.paginaStatusSolicitacao article.containerCodigo {
 }
 
 section.paginaStatusSolicitacao article form.formularioCodigo {
-    width: 500px;
+    width: auto;
     border: 1px solid #ccc;
     padding: 30px;
     border-radius: 17px;
     text-align: center;
     box-shadow: 0px 0px 5px 5px #e3e1e1;
-    margin-top: 95px;
+    margin-top: 10px;
 }
 
 section.paginaStatusSolicitacao form.formularioCodigo input {
@@ -355,73 +353,17 @@ section.paginaStatusSolicitacao article form div {
     font-size: 17px;
 }
 
-
-@media only screen and (max-width: 555px) {
-    section.paginaStatusSolicitacao article div.tituloTexto p {
-        font-size: 15px;
-    }
-
-    body main section article div {
-        display: flex;
-        flex-flow: wrap;
-        justify-content: center;
-    }
-
-    section.paginaStatusSolicitacao article form.formularioCodigo {
-        width: 333px;
-    }
-
-    section.paginaStatusSolicitacao article div.tituloTexto h1 {
-        font-size: 35px;
-    }
-}
-
-
-@media only screen and (max-width: 425px) {
-
-    footer ul li a {
-        font-size: 12px;
-    }
-
-    section.paginaStatusSolicitacao article div.tituloTexto p {
-        font-size: 13px;
-    }
-
-    body main section article div {
-        display: flex;
-        flex-flow: wrap;
-    }
-
-    section.paginaStatusSolicitacao article form.formularioCodigo {
-        width: 285px;
-
-    }
-
-    section.paginaStatusSolicitacao article div.tituloTexto h1 {
-        font-size: 27px;
-    }
-
-    section.paginaStatusSolicitacao article div.tituloTexto p {
-        width: 256px;
-    }
-
-    footer div.copyright {
-        font-size: 8px;
-    }
-
-}
-
-
-/* Final da PAGINA de Status de Solicitação */
-
+/* Final da parte de Status de Solicitação */
 
 
 /* PAGINA de Contratação Conexos */
+
+
 section.paginaContratacaoConexos {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 150px;
-    margin-top: 150px;
+    margin-bottom: 50px;
+    margin-top: 50px;
     flex-flow: wrap;
 }
 
@@ -436,6 +378,7 @@ section.paginaContratacaoConexos article div.textoTitulo h1 {
 
 section.paginaContratacaoConexos article div.textoTitulo ul {
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 section.paginaContratacaoConexos article h4 {
@@ -447,7 +390,7 @@ section.paginaContratacaoConexos form.formularioContratacao {
     width: 500px;
     height: 800px;
     border: 1px solid #ccc;
-    padding: 70px;
+    padding: 40px;
     border-radius: 17px;
     box-shadow: 0px 0px 5px 5px #e3e1e1;
 }
@@ -482,33 +425,10 @@ section.paginaContratacaoConexos form.formularioContratacao select {
     padding: 2px 10px;
 }
 
-@media only screen and (max-width: 780px) {
-    section.paginaContratacaoConexos form.formularioContratacao {
-        width: 420px;
-    }
-
-
-    section.paginaContratacaoConexos article div.textoTitulo {
-        padding: 35px;
-    }
-}
-
-@media only screen and (max-width: 430px) {
-    section.paginaContratacaoConexos form.formularioContratacao {
-        width: 350px;
-    }
-
-
-    section.paginaContratacaoConexos article div.textoTitulo {
-        padding: 35px;
-        width: 360px;
-    }
-}
 /* Final da PAGINA de Contratação Conexos */
 
 
-
-/* Media Query 100px*/ 
+/* ========== Media Query 1000px ==========*/
 @media(max-width:1000px) {
 
     /* Carrossel */
@@ -575,28 +495,55 @@ section.paginaContratacaoConexos form.formularioContratacao select {
 
 
     /* Footer */
-    footer div.container div#texto-footer {
-        display: none;
+    footer div.copyright p{
+        margin: 50px;
+        margin-bottom: 0px;
+        margin-top: 0px;
     }
 
     footer div.container {
+        padding: 20px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
+    footer div.container div#texto-footer {
+        display: none;
+    }
     /* Final footer */
 
-    /* Pagina Status de Solicitação */
 
+    /* Pagina Contratação Conexos */
+    section.paginaContratacaoConexos article div.textoTitulo {
+        width: auto;
+    }
+
+    section.paginaContratacaoConexos form.formularioContratacao {
+        width: auto;
+    }
+
+    section.paginaContratacaoConexos {
+        padding: 25px;
+    }
+    /* Final da pagina de Contratação Conexos */
+    
+
+    /* Pagina Status de Solicitação */
     section.paginaStatusSolicitacao {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 30px;
     }
 
-    section.paginaStatusSolicitacao article div.tituloTexto {
-        width: auto;
-        margin: 30px;
+    section.paginaStatusSolicitacao article div.tituloTexto h1 {
+        font-size: 26px;
+    }
 
-    } 
-}   /*Final  Media Query 1000px*/
+    section.paginaStatusSolicitacao article div.tituloTexto p {
+        font-size: 20px;
+    }
+    /*Final da pagina de Status de Solicitação */
+
+}
+/*========== Final  Media Query 1000px ==========*/
