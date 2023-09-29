@@ -251,6 +251,7 @@ footer div.container {
 
 footer p {
     margin: 0;
+    text-align: center;
 }
 
 footer div.col p {
@@ -296,6 +297,7 @@ section.paginaStatusSolicitacao {
     padding: 100px;
     display: flex;
     justify-content: space-evenly;
+    gap: 68px;
 }
 
 section.paginaStatusSolicitacao article div.tituloTexto h1 {
