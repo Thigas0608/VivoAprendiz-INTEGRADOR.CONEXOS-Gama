@@ -1,6 +1,9 @@
 body {
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 /* Header */
@@ -25,10 +28,18 @@ header ul.navbar-nav a.nav-link.active {
     color: #FDFDFD;
 }
 
+.img-header {
+    width: 6vw;
+}
+
 /* Final Header */
 
 
 /* Carrossel */
+main {
+    flex-grow: 1; 
+}
+
 main section div.carousel.slide {
     background: linear-gradient(#C8E6C9, rgb(255, 255, 255))
 }
@@ -232,12 +243,16 @@ section.statusSolicitacao article div.conteudoStatus button.buttonStatus:hover {
 
 
 /* Footer */
+/* styles.css */
 footer {
     background-color: #388E3C;
     color: #fff;
     font-weight: 700;
     font-size: 18px;
+    text-align: center;
+    padding: 10px;
 }
+
 
 footer div.container {
     width: 1200px;
@@ -317,7 +332,7 @@ section.paginaStatusSolicitacao article.containerCodigo {
 section.paginaStatusSolicitacao article form.formularioCodigo {
     width: auto;
     border: 1px solid #ccc;
-    padding: 30px;
+    padding: 70px;
     border-radius: 17px;
     text-align: center;
     box-shadow: 0px 0px 5px 5px #e3e1e1;
@@ -326,7 +341,8 @@ section.paginaStatusSolicitacao article form.formularioCodigo {
 
 section.paginaStatusSolicitacao form.formularioCodigo input {
     margin-top: 10px;
-    width: 80%;
+    width: 27vw;
+    border-radius: 5px;
 }
 
 section.paginaStatusSolicitacao article form.formularioCodigo button.buttonVerificarStatus {
@@ -511,6 +527,10 @@ section.paginaContratacaoConexos form.formularioContratacao select {
 
     footer div.container div#texto-footer {
         display: none;
+    }
+
+    .img-footer {
+        width: 12vw;
     }
     /* Final footer */
 

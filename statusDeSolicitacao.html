@@ -52,9 +52,21 @@
                     <label for="codigo"><strong> Código do pedido</strong></label><br>
                     <input type="texto" id="codigo" name="codigoDoPedido"><br>
                     <button class="buttonVerificarStatus" onclick="fazerSolicitacaoGET()">Verificar Status</button>
-                    <div>
-                        <p><strong>Solicitação #</strong></p>
-                        <p>Aguardando agendamento de instalação, um de nossos técnicos entrará em contato em breve.</p>
+                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Solicitação #</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Aguardando agendamento de instalação, um de nossos técnicos entrará em contato em breve.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </form>
             </article>
@@ -64,14 +76,12 @@
     <footer>
         <div class="container">
             <div class="row">
-                <img src="img/logo-conexos.png" alt="Logo Conexos">
+                <img src="img/logo-conexos.png" alt="Logo Conexos" class="img-footer">
             </div>
             <div class="col" id="texto-footer">
-                <p>Lorem ipsum dolor sit amet, consectetur <br>adipiscing elit, sed do eiusmod tempor <br>incididunt ut
-                    labore et
-                    dolore magna.<br>incididunt ut labore et dolore magna.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                    labore et dolore magna incididunt ut labore et dolore magna.</p>
             </div>
-
             <div class="col">
                 <ul>
                     <li><a href="index.html">Início</a></li>
@@ -79,9 +89,7 @@
                     <li><a href="statusDeSolicitacao.html">Status de solicitações</a></li>
                 </ul>
             </div>
-
         </div>
-
         <div class="copyright">
             <p>Projeto desenvolvido na academia Aprendiz Vivo Tech - Gama Academy</p>
         </div>
