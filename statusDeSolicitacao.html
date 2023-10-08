@@ -17,7 +17,6 @@
         <nav class="navbar navbar-expand-lg">
             <!-- Cabeçalho da barra de navegação -->
             <div class="container">
-                
                 <!-- Conteúdo do cabeçalho da barra de navegação -->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <a class="navbar-brand" href="#"><img src="img/logo-conexos.png" alt="logo conexos"></a>
@@ -38,7 +37,6 @@
     </header>
 
     <main>
-
         <section class="paginaStatusSolicitacao">
             <article>
                 <div class="tituloTexto">
@@ -50,25 +48,54 @@
             <article class="articleformularioCodigo">
                 <form class="formularioCodigo">
                     <label for="codigo"><strong> Código do pedido</strong></label><br>
-                    <input type="texto" id="codigo" name="codigoDoPedido"><br>
-                    <button class="buttonVerificarStatus" onclick="fazerSolicitacaoGET()">Verificar Status</button>
-                    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Solicitação #</h5>
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                                </div>
+                    <input type="text" id="codigo" name="codigoDoPedido"><br>
+                    <button class="buttonVerificarStatus" type="button" data-bs-target="#exampleModal" onclick="fazerSolicitacaoGET()">Verificar Status</button>
+                </form>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Status Do Pedido</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
                                 <div class="modal-body">
-                                    <p>Aguardando agendamento de instalação, um de nossos técnicos entrará em contato em breve.</p>
+                                    <h5>Nome: <span id="modal-nome"></span></h5>
+                                    <h5>CPF: <span id="modal-cpf"></span></h5>
+                                    <h5>Telefone: <span id="modal-telefone"></span></h5>
+                                    <h5>Email: <span id="modal-email"></span></h5>
+                                    <h5>Plano: <span id="modal-plano"></span></h5>
+                                    <h5>Horário: <span id="modal-horario"></span></h5>
                                 </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                                </div>
+                                
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
                             </div>
                         </div>
                     </div>
-                </form>
+                </div>
+
+                <div class="modal fade" id="codigoVazioModal" tabindex="-1" aria-labelledby="codigoVazioModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="codigoVazioModalLabel">Código do Pedido Vazio</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                O campo do código do pedido está vazio. Por favor, insira um código válido.
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
             </article>
         </section>
     </main>

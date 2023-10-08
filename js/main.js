@@ -1,21 +1,33 @@
-// Função para fazer a solicitação GET
 function fazerSolicitacaoGET() {
-    const codigoDoPedido = document.querySelector("#codigo").value;
+    var pedidoId = document.getElementById('codigo').value;
+    
+    // Verifica se o campo do código do pedido está vazio
+    if (pedidoId.trim() === '') {
+        // Se estiver vazio, mostre o modal de aviso
+        var codigoVazioModal = new bootstrap.Modal(document.getElementById('codigoVazioModal'));
+        codigoVazioModal.show();
+    } else {
+        var url = 'http://localhost:3000/ordens/' + pedidoId;
 
-    // Fazer a solicitação GET para http://localhost:3000/ordens/id
-    axios.get(`http://localhost:3000/ordens/${codigoDoPedido}`)
-        .then(function (response) {
-            // Lógica para lidar com a resposta do servidor
-            const dadosDaOrdem = response.data;
-            // Faça algo com os dados recuperados, por exemplo, exibi-los na página
-            console.log(dadosDaOrdem);
-        })
-        .catch(function (error) {
-            // Lógica para lidar com erros, se necessário
-            console.error(error);
-        });
+        axios.get(url)
+            .then(function (response) {
+                var data = response.data; 
+
+                
+                document.getElementById('modal-nome').textContent = data.nome;
+                document.getElementById('modal-cpf').textContent = data.cpf;
+                document.getElementById('modal-telefone').textContent = data.telefone;
+                document.getElementById('modal-email').textContent = data.email;
+                document.getElementById('modal-plano').textContent = data.plano;
+                document.getElementById('modal-horario').textContent = data.horario;
+
+                // Abra o modal
+                var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+                myModal.show();
+            })
+            .catch(function (error) {
+                console.error('Erro ao fazer a solicitação GET:', error);
+                
+            });
+    }
 }
-
-// Associar a função ao evento onclick de um botão
-const botaoVerificarStatus = document.querySelector(".buttonVerificarStatus");
-botaoVerificarStatus.onclick = fazerSolicitacaoGET;
