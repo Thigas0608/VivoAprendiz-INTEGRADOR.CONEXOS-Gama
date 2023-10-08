@@ -20,6 +20,7 @@ function fazerSolicitacaoGET() {
                 document.getElementById('modal-email').textContent = data.email;
                 document.getElementById('modal-plano').textContent = data.plano;
                 document.getElementById('modal-horario').textContent = data.horario;
+                document.getElementById('modal-status').textContent = data.status;
 
                 // Abra o modal
                 var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
@@ -31,3 +32,4 @@ function fazerSolicitacaoGET() {
             });
     }
 }
+
