@@ -32,4 +32,30 @@ function fazerSolicitacaoGET() {
             });
     }
 }
-
+function enviarDados() {
+    // Dados que você deseja enviar no corpo da solicitação POST
+    const dados = {
+        nome: "nome",
+        cpf: "cpf",
+        telefone: "telefone",
+        email: "email",
+        plano: "plano",
+        horario: "horario",
+        status: "status", 
+    };
+  
+    // URL para a qual você está enviando a solicitação POST
+    const url = "http://localhost:3000/ordens";
+  
+    // Enviar a solicitação POST usando o Axios
+    axios.post(url, dados)
+      .then(function (response) {
+        // Manipular a resposta bem-sucedida aqui
+        console.log("Solicitação POST bem-sucedida:", response.data);
+      })
+      .catch(function (error) {
+        // Manipular erros aqui
+        console.error("Erro na solicitação POST:", error);
+      });
+  }
+  

@@ -65,22 +65,22 @@
                 </div>
             </article>
             <article>
-                <form class="formularioContratacao">
+                <form class="formularioContratacao" id="formularioContratacao">
                     <h4>Contratação do plano</h4>
                     <label for="nome"><strong>Nome: </strong></label><br>
-                    <input type="texto" id="nome" name="nome_usuario"><br>
+                    <input type="texto" id="nome" name="nome"><br>
 
                     <label for="cpf"><strong>CPF: </strong></label><br>
-                    <input type="texto" id="cpf" name="cpf_usuario"><br>
+                    <input type="texto" id="cpf" name="cpf"><br>
 
                     <label for="telefone"><strong>Telefone para contato: </strong> </label><br>
-                    <input type="texto" id="telefone" name="telefone_usuario"><br>
+                    <input type="texto" id="telefone" name="telefone"><br>
 
                     <label for="email"><strong>Email: </strong></label><br>
-                    <input type="texto" id="email" name="email_usuario"><br>
+                    <input type="texto" id="email" name="email"><br>
 
                     <label for="plano"><strong>Plano:</strong></label><br>
-                    <input type="text" id="plano" name="plano" value="Plano 1" disabled><br>
+                    <input type="text" id="plano" name="plano" value="Plano 2" disabled><br>
 
                     <p><strong>Preferência de horario para visita Tecnicas: </strong><br />
                         <select name="escolaridade">
@@ -90,7 +90,8 @@
                         </select>
                     </p>
 
-                    <button class="buttonPlano">Contratar</button>
+                    <button class="buttonCadastrar" id="botaoEnviar" type="button" onclick="enviarDados()">Enviar Dados</button>
+
                 </form>
             </article>
         </section>
