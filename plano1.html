@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="css/estilo.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+ 
 </head>
 
 <body>
@@ -81,19 +81,43 @@
                     <input type="texto" id="email" name="email"><br>
 
                     <label for="plano"><strong>Plano:</strong></label><br>
-                    <input type="text" id="plano" name="plano" value="Plano 2" disabled><br>
+                    <input type="text" id="plano" name="plano" value="Plano 1" disabled><br>
 
                     <p><strong>Preferência de horario para visita Tecnicas: </strong><br />
-                        <select name="escolaridade">
-                            <option value="em"> 8:00 ás 12:00 </option>
-                            <option value="nt"> 13:00 ás 17:00 </option>
-                            <option value="ns"> 18:00 ás 22:00 </option>
+                        <select name="horario" id="horario">
+                            <option value="Manhã"> Manhã </option>
+                            <option value="Tarde"> Tarde</option>
+                            <option value="Noite"> Noite </option>
                         </select>
                     </p>
 
-                    <button class="buttonCadastrar" id="botaoEnviar" type="button" onclick="enviarDados()">Enviar Dados</button>
+                    <button class="buttonCadastrar" id="botaoEnviar" type="button" onclick="fazerSolicitacaoPOST()">Enviar</button>
 
                 </form>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Status Do Pedido</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h5>Nome: <span id="modal-nome"></span></h5>
+                                <h5>CPF: <span id="modal-cpf"></span></h5>
+                                <h5>Telefone: <span id="modal-telefone"></span></h5>
+                                <h5>Email: <span id="modal-email"></span></h5>
+                                <h5>Plano: <span id="modal-plano"></span></h5>
+                                <h5>Horário: <span id="modal-horario"></span></h5>
+                                <h5>Status Do Pedido: <span id="modal-status"></span></h5>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
             </article>
         </section>
         <!-- Fim da parte de contratação -->
@@ -120,6 +144,8 @@
             <p>Projeto desenvolvido na academia Aprendiz Vivo Tech - Gama Academy</p>
         </div>
     </footer>
+    <script src="./js/main.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous">
         </script>
